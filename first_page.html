@@ -8,6 +8,26 @@
         My First Heading
     </h1>
 
+    <head>
+        <style>
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                padding: 5px
+            }
+            
+            iframe:focuse {
+                outline: none;
+            }
+            
+            iframe[seamless] {
+                display: block;
+            }
+        </style>
+
+    </head>
+
     <body style="font-size: 180%">
         This is my first web page. What do you think so far? Pretty shitty huh?
         <!-- This is a comment -->
@@ -42,6 +62,37 @@
         </div>
         <div>
             <a href="https://www.ryerson.ca/html" target="_blank">Example Website Link</a>
+        </div>
+        <div>
+
+            <table style="width:100%">
+                <caption>Roster</caption>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Lindsay</td>
+                    <td>Perkins</td>
+                    <td>29</td>
+                </tr>
+                <tr align="right">
+                    <td colspan="2">John</td>
+                    <td align="left">Alkins</td>
+                    <td>56</td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+            <iframe name="second frame" width=300px height=300px src="https:/www.wikipedia.org">
+                
+            </iframe>
+        </div>
+        <div>
+
+            <img src="https://media0.giphy.com/media/10tzsu5jrb2ntu/giphy.gif"> </img>
         </div>
     </body>
 </div>
