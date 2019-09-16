@@ -10,6 +10,11 @@
             width: 180px;
         }
         
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
         div.gallery:hover {
             border: 1px solid #777777;
         }
@@ -23,58 +28,105 @@
             padding: 15px;
             text-align: center;
         }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
     </style>
 </head>
 
-<body>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Open_Road.JPG">
-            <img src='Iceland Photos/Open_Road.JPG' alt='Open_Road' width="1080" height="620">
-        </a>
-        <div class="description">Heading to the mountains</div>
+<body style="background-color: cadetblue;">
+    <h2 style="font-family:sans-serif; font-size: 2em; left: 50px;">Iceland Gallery</h2>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank " href="Iceland Photos/Open_Road.JPG ">
+                <img src='Iceland Photos/Open_Road.JPG' alt='Open_Road' width="1080 " height="620 ">
+            </a>
+            <div class="description ">Heading to the mountains</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Farm.JPG">
-            <img src="Iceland Photos/Farm.JPG" alt='Farm' width="1080" height="620">
-        </a>
-        <div class="description">A small farm that was converted into a tourist center near Thorsmork</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank " href="Iceland Photos/Farm.JPG ">
+                <img src="Iceland Photos/Farm.JPG " alt='Farm' width="1080 " height="620 ">
+            </a>
+            <div class="description ">A small farm that was converted into a tourist center near Thorsmork</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Fishing_Village.JPG">
-            <img src='Iceland Photos/Fishing_Village.JPG' alt='Fishing_Village' width="1080" height="620">
-        </a>
-        <div class="description">A village nestled in the northeast of the country</div>
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank " href="Iceland Photos/Fishing_Village.JPG ">
+                <img src='Iceland Photos/Fishing_Village.JPG' alt='Fishing_Village' width="1080 " height="620 ">
+            </a>
+            <div class="description ">A village nestled in the northeast of the country</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Glacier_River.JPG">
-            <img src='Iceland Photos/Glacier_River.JPG' alt='Glacier_River' width="1080" height="620">
-        </a>
-        <div class="description">A river flowing from the glacier ontop of the mountains</div>
+    <div class="responsive">
+        <div class="gallery ">
+            <a target="_blank " href="Iceland Photos/Glacier_River.JPG ">
+                <img src='Iceland Photos/Glacier_River.JPG' alt='Glacier_River' width="1080 " height="620 ">
+            </a>
+            <div class="description ">A river flowing from the glacier ontop of the mountains</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Hot_Spring_River.JPG">
-            <img src='Iceland Photos/Hot_Spring_River.JPG' alt='Hot_Spring_River' width="1080" height="620">
-        </a>
-        <div class="description">I took this picture right before taking a dip</div>
+    <div class="responsive">
+        <div class="gallery ">
+            <a target="_blank " href="Iceland Photos/Hot_Spring_River.JPG ">
+                <img src='Iceland Photos/Hot_Spring_River.JPG' alt='Hot_Spring_River' width="1080 " height="620 ">
+            </a>
+            <div class="description ">I took this picture right before taking a dip</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Huge_Waterfall.JPG">
-            <img src='Iceland Photos/Huge_Waterfall.JPG' alt='Huge_Waterfall' width="1080" height="620">
-        </a>
-        <div class="description">Skogafoss, one of Iceland's largest falls</div>
+    <div class="responsive">
+        <div class="gallery ">
+            <a target="_blank " href="Iceland Photos/Huge_Waterfall.JPG ">
+                <img src='Iceland Photos/Huge_Waterfall.JPG' alt='Huge_Waterfall' width="1080 " height="620 ">
+            </a>
+            <div class="description ">Skogafoss, one of Iceland's largest falls</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Icelandic_Horse.JPG">
-            <img src='Iceland Photos/Icelandic_Horse.JPG' alt='Icelandic_Horse' width="1080" height="620">
-        </a>
-        <div class="description">Hairy friend we met on the side of the road</div>
+    <div class="responsive">
+        <div class="gallery ">
+            <a target="_blank " href="Iceland Photos/Icelandic_Horse.JPG ">
+                <img src='Iceland Photos/Icelandic_Horse.JPG' alt='Icelandic_Horse' width="1080 " height="620 ">
+            </a>
+            <div class="description ">Hairy friend we met on the side of the road</div>
+        </div>
     </div>
-    <div class="gallery">
-        <a target="_blank" href="Iceland Photos/Northern_Lights.JPG">
-            <img src='Iceland Photos/Northern_Lights.JPG' alt='Northern_Lights' width="1080" height="620">
-        </a>
-        <div class="description">Northern lights glimpsed from our camp in the north</div>
+    <div class="responsive">
+        <div class="gallery ">
+            <a target="_blank " href="Iceland Photos/Northern_Lights.JPG ">
+                <img src='Iceland Photos/Northern_Lights.JPG' alt='Northern_Lights' width="1080 " height="620 ">
+            </a>
+            <div class="description ">Northern lights glimpsed from our camp in the north</div>
+        </div>
     </div>
+
 
 </body>
 
