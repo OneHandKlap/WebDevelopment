@@ -1,155 +1,172 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            .site-content{
-                width: 100vw;
-                height: 70vw;
-                background-image: url("grizzly.jpg");
-                background-size: cover;
-                justify-content: center;
-            }
-            div.title {
-                width: 100%;
-                font-size: 5em;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-weight: bold;
-                text-align: center;
-                top:60%;
-                color: aliceblue;
-                left:50%;
-                -webkit-text-stroke-width: 5px;
-                -webkit-text-stroke-color:black;
-            }
-            .table-container{
-                display: flex;
-                width: 100%;
-                align-content: center;
+<html lang="en">
 
-            }
-            .table-button{
-                font-size: 4em;
-                color: aliceblue;
-                -webkit-text-stroke-width: 1px;
-                -webkit-text-stroke-color:black;
-                width: 100%;
 
-            }
-            .table-button:hover .table-dropdown{
-                display:block;
-            }
-            .table-dropdown{
-                display: none;
-                position: absolute;
-                background-color: aliceblue;
-                padding: 12px 16px;
-                border-radius: 10px;
-                z-index: 6;
-                width: 45vw;
-                height: 120px;
-                margin: 5px;
-                color: black;
-
-            }
-            table,
-            th,
-            td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            }
-            .reports-container{
-                display: flex;
-                width: 100%;
-                color: aliceblue;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                font-size: 3em;
-                -webkit-text-stroke-color: black;
-                -webkit-text-stroke-width: 1px;
-            }
-            .validation-report{
-                right: 0%;
-                width: 100%;
-                color: aliceblue;
-            }
-            .technical-report{
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <div class = 'site-content'>
-            <div class = "title">P. Adam Aboud || 500883647</div>
-            <div class = "table-container">
-                <div class = "table-button">
-                    <a href="table-button" style="color: aliceblue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black;">Cool Stuff</a>
-                    <div class = "table-dropdown">
-                        <table style = "font-size:1ch; font-weight: 100;">
-                            <tr style= "font-weight: bold; text-shadow: 2px 2px #ff0000">
-                                <th>Cool Animals
-                                </th>
-                                <th>Cool Plants
-                                </th>
-                                <th>Cool Cars
-
-                                </th>
-                                <th>Cool Planes
-
-                                </th>
-                            </tr>
-                            <tr style = "font-family: 'Courier New', Courier, monospace; font-size:5mm">
-                                <th>
-                                    <a href="https://c402277.ssl.cf1.rackcdn.com/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942" target = "_blank">Bengal Tiger</a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale =1.0">
+    <title>CPS530 - Lab01</title>
+    <style>
+        .site-content {
+            width: 100vw;
+            height: 70vw;
+            background-image: url("grizzly.jpg");
+            background-size: cover;
+            justify-content: center;
+        }
         
-                                </th>
-                                <th>
-                                    <a href = "https://img.jakpost.net/c/2016/09/22/2016_09_22_12490_1474527654._large.jpg" target = "_blank">Stinking Corpse Lily</a>
-
-                                </th>
-                                <th>
-                                    <a href = "https://s.blogcdn.com/slideshows/images/slides/615/826/5/S6158265/slug/l/01-19695-citroen-ds21-drive-1.jpg" target="_blank">Citroen DS</a>
-
-                                </th>
-                                <th>
-                                    <a href = "https://s.marketwatch.com/public/resources/images/MW-GD792_b2_bom_ZH_20180214160934.jpg" target ="_blank">B2 Spirit</a>
-                                </th>
+        div.title {
+            width: 100%;
+            font-size: 5em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            top: 60%;
+            color: aliceblue;
+            left: 50%;
+            -webkit-text-stroke-width: 5px;
+            -webkit-text-stroke-color: black;
+        }
         
-                            </tr>
-                            <tr style = "font-family: 'Courier New', Courier, monospace; font-size:5mm">
-                                <th>
-                                    <a href="https://images.firstpost.com/wp-content/uploads/2019/05/Purple-Frog-1-768.jpg" target="_blank">Purple Frog</a>
-
-                                </th>
-                                <th>
-                                    <a href="https://www.anniesannuals.com/signs/a/images/amorphophallus_bulbifer_attribute_john_boggan.jpg" target="_blank">Amorphophallus</a>
-
-                                </th>
-                                <th colspan="2">
-                                    <a href= "https://i.ytimg.com/vi/nnF2yua4KIw/maxresdefault.jpg" target="_blank">Terrafugia</a>
-
-                                </th>
-
-                            </tr>
-                            <tr>
-
-                            </tr>
-                        </table>
-                    </div>
-                    
-                </div>
-                <div class = "reports-container">
-                    <div class ="validation-report">
-                        <a href = "something.html">Validatition Report</a>
-    
-                    </div>
-                    <div class = "technical-report" style="color: aliceblue;">
-                        <a href = "technical-report.html">Technical Report</a>
-    
-                    </div>
+        .table-container {
+            display: flex;
+            width: 100%;
+            align-content: center;
+        }
         
-                </div>  
+        .table-button {
+            font-size: 4em;
+            color: aliceblue;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            width: 100%;
+        }
+        
+        .table-button:hover .table-dropdown {
+            display: block;
+        }
+        
+        .table-dropdown {
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            padding: 12px 16px;
+            border-radius: 10px;
+            z-index: 6;
+            width: 60%;
+            height: 55%;
+            margin: 5px;
+            color: black;
+        }
+        
+        table,
+        th,
+        td {
+            border-color: orange;
+            border-style: double;
+            border-width: 25px 30px 10px 20px;
+            border-image: url("border.png") 25 30 10 20 repeat;
+        }
+        
+        .reports-container {
+            display: flex;
+            width: 100%;
+            color: aliceblue;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 3em;
+            -webkit-text-stroke-color: black;
+            -webkit-text-stroke-width: 1px;
+        }
+        
+        .validation-report {
+            right: 0%;
+            width: 100%;
+            color: aliceblue;
+        }
+        
+        .technical-report {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='site-content'>
+        <div class="title">P. Adam Aboud || 500883647</div>
+        <div class="table-container">
+            <div class="table-button">
+                <a href="table-button" style="color: aliceblue; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: black;">Cool Stuff</a>
+                <div class="table-dropdown">
+                    <table style="font-size:1ch; font-weight: 100;">
+                        <tr style="font-weight: bold; text-shadow: 2px 2px #ff0000">
+                            <th>Cool Animals
+                            </th>
+                            <th>Cool Plants
+                            </th>
+                            <th>Cool Cars
+
+                            </th>
+                            <th>Cool Planes
+
+                            </th>
+                        </tr>
+                        <tr style="font-family: 'Courier New', Courier, monospace; font-size:5mm">
+                            <th>
+                                <a href="https://c402277.ssl.cf1.rackcdn.com/photos/1620/images/carousel_small/bengal-tiger-why-matter_7341043.jpg?1345548942" target="_blank">Bengal Tiger</a>
+
+                            </th>
+                            <th>
+                                <a href="https://img.jakpost.net/c/2016/09/22/2016_09_22_12490_1474527654._large.jpg" target="_blank">Stinking Corpse Lily</a>
+
+                            </th>
+                            <th>
+                                <a href="https://s.blogcdn.com/slideshows/images/slides/615/826/5/S6158265/slug/l/01-19695-citroen-ds21-drive-1.jpg" target="_blank">Citroen DS</a>
+
+                            </th>
+                            <th>
+                                <a href="https://s.marketwatch.com/public/resources/images/MW-GD792_b2_bom_ZH_20180214160934.jpg" target="_blank">B2 Spirit</a>
+                            </th>
+
+                        </tr>
+                        <tr style="font-family: 'Courier New', Courier, monospace; font-size:5mm">
+                            <th>
+                                <a href="https://images.firstpost.com/wp-content/uploads/2019/05/Purple-Frog-1-768.jpg" target="_blank">Purple Frog</a>
+
+                            </th>
+                            <th>
+                                <a href="https://www.anniesannuals.com/signs/a/images/amorphophallus_bulbifer_attribute_john_boggan.jpg" target="_blank">Amorphophallus</a>
+
+                            </th>
+                            <th colspan="2">
+                                <a href="https://i.ytimg.com/vi/nnF2yua4KIw/maxresdefault.jpg" target="_blank">Terrafugia</a>
+                            </th>
+                        </tr>
+                    </table>
                 </div>
-                </div>
+
             </div>
+            <div class="reports-container">
+                <div class="validation-report">
+                    <a href="https://validator.w3.org/nu/?doc=http%3A%2F%2Fwww.adamaboud.com%2Flab02%2F">Validatition Report</a>
+
+                </div>
+                <div class="technical-report" style="color: aliceblue;">
+                    <a href="technical-report.html">Technical Report</a>
+
+                </div>
+
+            </div>
+
         </div>
-    </body>
+        <div style="width:100%; display: flex; height: 200px;">
+            <audio controls style="width: 100%; top:0;">
+                <source src = "yell-YELLGrizzlyBearVocalizations20160520Android1.mp3">
+            </audio>
+            <aside style="width: 100%; height: auto;">
+                <img src="panda_unrelated.jpg" alt="an unrelated image">
+            </aside>
+        </div>
+    </div>
+</body>
+
 </html>
