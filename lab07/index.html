@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lab07</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     <style>
         .draggable {
-            width: 25%;
-            height: 25%;
+            width: 20%;
+            height: 20%;
             padding: 0.5em;
         }
         
@@ -19,7 +20,7 @@
             size: 80vw;
             background-position: center;
             background-image: url("imgs/potato_body.gif");
-            background-size: 90vw;
+            background-size: 70vw;
             background-repeat: no-repeat;
         }
     </style>
@@ -33,12 +34,20 @@
             $(".draggable").resizable();
         });
     </script>
+    <div>
+
+
+
+    </div>
 </head>
 
 <body>
+    <div style="justify-content: center;">
+        <a href="http://www.adamaboud.com/lab07/index.html" type="button" class="btn btn-danger" role="button">Reset</a>
+    </div>
     <div class="background">
-        <h1 align="center" id="title" style="font-family: 'Alata', sans-serif;">Mr. Potato-Brain</h1>
-        <h2 align="center" id="student-info" style="font-family: 'Alata', sans-serif;">500883647 - P. Adam Aboud</h2>
+        <h1 id="title" style="font-family: 'Alata', sans-serif;">Mr. Potato-Brain</h1>
+        <h2 id="student-info" style="font-family: 'Alata', sans-serif;">500883647 - P. Adam Aboud</h2>
         <!-- <div class="draggable">
             <img src="imgs/potato_body.gif" width="600" height="800">
         </div> -->
