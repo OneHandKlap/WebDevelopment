@@ -1,0 +1,51 @@
+{
+    "response": {
+        "-type": "result",
+        "data": {
+            "item": {
+                "title": "Yimago 2 / Hawaiian Music Radio",
+                "song": "Sonny Chillingworth - Liloa's Mele [1999]",
+                "track": {
+                    "artist": "Sonny Chillingworth",
+                    "title": "Liloa's Mele [1999]",
+                    "album": "Hawaiian Slack Key Guitar Masters Collection, Vol.2",
+                    "royaltytrackid": "0",
+                    "started": "1574791309",
+                    "id": "44977",
+                    "length": "0",
+                    "playlist": {
+                        "id": "1579",
+                        "title": "Y2 > General"
+                    },
+                    "imageurl": "http://s20.postimg.cc/z5885scil/hskgm2.jpg"
+                },
+                "bitrate": "64 Kbps",
+                "server": "Online",
+                "autodj": "Online",
+                "source": "Yes",
+                "summary": {
+                    "a": {
+                        "-href": "http://199.195.194.92:2199/tunein/-stream/meyima03.pls",
+                        "#text": "Yimago 2 / Hawaiian Music Radio - Sonny Chillingworth - Liloa's Mele [1999]"
+                    }
+                },
+                "listeners": "4",
+                "maxlisteners": "100",
+                "reseller": "0",
+                "serverstate": "1",
+                "sourcestate": "1",
+                "sourceconn": "1",
+                "date": "Nov 26, 2019",
+                "time": "08:03 AM",
+                "rawmeta": "Sonny Chillingworth - Liloa's Mele [1999]",
+                "mountpoint": "/stream",
+                "tuneinurl": "http://199.195.194.94:8183/stream",
+                "tuneinformat": "aac",
+                "webplayer": "muses",
+                "servertype": "ShoutCast2",
+                "listenertotal": "4",
+                "url": "http://199.195.194.92:2199/rpc"
+            }
+        }
+    }
+}

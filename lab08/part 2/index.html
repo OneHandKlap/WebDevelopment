@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="300">
+    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="part1.css">
+</head>
+
+<body>
+    <h3 class="radio-title" id="radio-title">Radio Title</h3>
+    <div class="main">
+        <h1 id="song-title">Song Title</h1>
+        <h2 id="artist-name">Artist</h2>
+        <div id="image">Image</div>
+        <h3 id="date">Date</h3>
+
+    </div>
+    <script>
+        Jason = {
+            "response": {
+                "-type": "result",
+                "data": {
+                    "item": {
+                        "title": "Yimago 2 / Hawaiian Music Radio",
+                        "song": "Sonny Chillingworth - Liloa's Mele [1999]",
+                        "track": {
+                            "artist": "Sonny Chillingworth",
+                            "title": "Liloa's Mele [1999]",
+                            "album": "Hawaiian Slack Key Guitar Masters Collection, Vol .2 ",
+                            "royaltytrackid ": "0",
+                            "started ": "1574791309 ",
+                            "id ": "4977 ",
+                            "length ": "0 ",
+                            "playlist ": {
+                                "id ": "1579 ",
+                                "title ": "Y2 > General "
+                            },
+                            "imageurl": "http://s20.postimg.cc/z5885scil/hskgm2.jpg"
+                        },
+                        "bitrate": "64 Kbps",
+                        "server": "Online",
+                        "autodj": "Online",
+                        "source": "Yes",
+                        "summary": {
+                            "a": {
+                                "-href": "http://199.195.194.92:2199/tunein/-stream/meyima03.pls",
+                                "#text": "Yimago 2 / Hawaiian Music Radio - Sonny Chillingworth - Liloa's Mele [1999]"
+                            }
+                        },
+                        "listeners": "4",
+                        "maxlisteners": "100",
+                        "reseller": "0",
+                        "serverstate": "1",
+                        "sourcestate": "1",
+                        "sourceconn": "1",
+                        "date": "Nov 26, 2019",
+                        "time": "08:03 AM",
+                        "rawmeta": "Sonny Chillingworth - Liloa's Mele [1999]",
+                        "mountpoint": "/stream",
+                        "tuneinurl": "http://199.195.194.94:8183/stream",
+                        "tuneinformat": "aac",
+                        "webplayer": "muses",
+                        "servertype": "ShoutCast2",
+                        "listenertotal": "4",
+                        "url": "http://199.195.194.92:2199/rpc"
+                    }
+                }
+            }
+        }
+
+        document.querySelector('#radio-title').innerHTML = Jason.response.data.item.title
+        document.querySelector('#song-title').innerHTML = Jason.response.data.item.song
+        document.querySelector('#artist-name').innerHTML = Jason.response.data.item.track.artist
+        document.querySelector('#image').innerHTML = `<img id="image" src= ${Jason.response.data.item.track.imageurl}></img>`
+        let date = new Date(Jason.response.data.item.date + " " + Jason.response.data.item.time)
+        date.setHours(date.getHours() + 5)
+        date = date.toLocaleDateString("en-US", {
+            timeZone: "America/Toronto",
+            hour: "numeric",
+            minute: "numeric",
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        })
+        document.querySelector('#date').innerHTML = date
+    </script>
+</body>
+
+</html>

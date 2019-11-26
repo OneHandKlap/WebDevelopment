@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="refresh" content="300">
+    <meta charset="UTF-8" <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="part1.css">
+</head>
+
+<body>
+    <h3 class="radio-title" id="radio-title">Radio Title</h3>
+    <div class="main">
+        <h1 id="song-title">Song Title</h1>
+        <h2 id="artist-name">Artist</h2>
+        <div id="image">Image</div>
+        <h3 id="date">Date</h3>
+
+    </div>
+
+
+    <script>
+        let xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = function() {
+            if (this.readyState != 4 || this.status != 200) {
+                return;
+            }
+            let doc = this.responseXML;
+            document.querySelector('.radio-title').innerHTML = doc.getElementsByTagName('title')[0].childNodes[0].nodeValue
+            document.querySelector('#song-title').innerHTML = doc.getElementsByTagName('song')[0].childNodes[0].nodeValue
+            document.querySelector('#artist-name').innerHTML = doc.getElementsByTagName('artist')[0].childNodes[0].nodeValue
+            document.querySelector('#image').innerHTML = `<img id ="image" src= ${doc.getElementsByTagName('imageurl')[0].childNodes[0].nodeValue}>`
+            let date = new Date(doc.getElementsByTagName('date')[0].childNodes[0].nodeValue + " " + doc.getElementsByTagName('time')[0].childNodes[0].nodeValue)
+            date.setHours(date.getHours() + 5)
+            date = date.toLocaleDateString("en-US", {
+                timeZone: "America/Toronto",
+                hour: "numeric",
+                minute: "numeric",
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            })
+            document.querySelector('#date').innerHTML = date
+        }
+
+        xhttp.open("GET", "https://cors-anywhere.herokuapp.com/http://199.195.194.92:2199/rpc/meyima03/streaminfo.get?x=1", true)
+        xhttp.send();
+    </script>
+</body>
+
+
+</html>
