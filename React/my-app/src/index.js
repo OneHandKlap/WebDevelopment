@@ -11,12 +11,18 @@ function Square(props){
     );
 }
 
-class resetButton extends React.Component {
+class ResetButton extends React.Component {
     render(){
         return(
-        <button className = "reset" onClick={Board.render()}></button>
+        #<button type="button" className = "reset" onClick={refreshPage()}>Reset</button>
+        
         )
     }
+}
+
+function refreshPage(){
+    window.location.reload();
+    return;
 }
 
 class Board extends React.Component {
@@ -71,9 +77,10 @@ class Game extends React.Component {
     render() {
         return ( <div className = "game" >
             <div className = "reset-button">
-                <resetButton/>
+                
             </div>
             <div className = "game-board" >
+            <ResetButton/>
             <Board/>
             </div> <div className = "game-info" >
             <div > { /* status */ } </div> <ol > { /* TODO */ } </ol> </div > </div>
